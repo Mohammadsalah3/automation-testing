@@ -38,13 +38,14 @@ driver.get("https://application.bau.edu.jo/reg_new/index.jsp")
 username_box = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.NAME, "username")) )
 username_box.clear()
-username_box.send_keys("32109303036")
+username_box.send_keys("user_name")
 time.sleep(3)
 password_box = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.NAME, "password")) )
 password_box.clear()
-password_box.send_keys("2000711395" + Keys.ENTER)
+password_box.send_keys("pass" + Keys.ENTER)
 """
 time.sleep(20)
 driver.quit()
+
 
